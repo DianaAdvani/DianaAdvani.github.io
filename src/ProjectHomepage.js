@@ -16,7 +16,7 @@ export function ProjectHomepage({clickHandler}) {
         { project == undefined && 
             <>
                 <h1>Design Projects</h1>
-                <p> An industrial design instructor told me* the best way to learn design was to try to solve problems for people.</p>
+                <p> An industrial design instructor told me* the best way to learn design was to solve problems for people.</p>
                 <p> To start, find one person with a problem and solve it for them. </p>
                 <p> Then, find 100 people with the same problem and solve that problem.</p>
                 <p> Finally, find a problem that affects 10,000 people and solve it. </p>
