@@ -16,3 +16,11 @@ code {
   display: flex;
   justify-content: center;
 }
+
+.vertical{
+  flex-direction: column;
+}
+
+.flex-one {
+  flex-grow: 1;
+}

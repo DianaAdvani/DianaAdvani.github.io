@@ -4,9 +4,11 @@ export function OnePerson(){
         <>
             <h1>Artist's Website</h1>
 
-            <img style={{width: "100%"}} src={process.env.PUBLIC_URL + '/ArtistWebsiteHomepage.png'} />
+            <div className="center ">
 
-            <div className="center">
+            <img style={{width: "50%", flexGrow: 1}} src={process.env.PUBLIC_URL + '/ArtistWebsiteHomepage.png'} />
+
+            <div className="center vertical flex-one">
 
                 
                 <div className="block">
@@ -23,6 +25,7 @@ export function OnePerson(){
                 <h5>Motivation</h5>
                 <p>To better understand the design process as a Frontend software engineer.</p> 
                 </div>
+            </div>
             </div>
 
             <div className="center">
