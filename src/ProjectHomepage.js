@@ -20,10 +20,12 @@ export function ProjectHomepage({clickHandler}) {
                 <p> To start, find one person with a problem and solve it for them. </p>
                 <p> Then, find 100 people with the same problem and solve that problem.</p>
                 <p> Finally, find a problem that affects 10,000 people and solve it. </p>
+                <div className="center">
                 <div className="projects-display">
-                    <button onClick={() => setProject("passion")}>
+
+                    {/* <button onClick={() => setProject("passion")}>
                         <Icon name="Passion Project"/>
-                    </button>
+                    </button> */}
                     <button onClick={() => setProject("1_person")}>
                         <Icon name="Solving 1 person's problem"/>
                     </button>
@@ -33,6 +35,7 @@ export function ProjectHomepage({clickHandler}) {
                     <button onClick={() => setProject("10000_people")}>
                         <Icon name="Solving 10,000 people's problem"/>
                     </button>
+                    </div>
                 </div>
                 <p> *I talked with an industrial designer as part of my project to interview 50 people to try to figure out what I want to do next in my career. See more of that project here.</p>
             </>

@@ -17,11 +17,10 @@
     margin-right: 10px;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-}
-
 .horizontal-divider {
     height: 10px;
+}
+
+.block {
+    margin: 10px;
 }
