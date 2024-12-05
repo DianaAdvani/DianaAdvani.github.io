@@ -1,0 +1,8 @@
+.img-wrapper {
+    margin: 10px; 
+    display: flex;
+}
+
+.img-wrapper img {
+    width: 80%;
+}
