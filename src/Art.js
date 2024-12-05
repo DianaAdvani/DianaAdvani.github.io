@@ -3,6 +3,7 @@ export function Art({clickHandler}) {
         <div>
             <button onClick={() => clickHandler("home")}>Back</button>
             <h1>Art</h1>
+            
         </div>
     )
 }

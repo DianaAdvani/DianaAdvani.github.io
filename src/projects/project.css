@@ -1,8 +1,27 @@
 .img-wrapper {
-    margin: 10px; 
     display: flex;
+    gap: 10px;
 }
 
-.img-wrapper img {
-    width: 80%;
+.img-wrapper > div, 
+.img-wrapper iframe {
+    flex: 1; 
+    max-width: 50%;
+}
+
+.zoom-slider {
+    margin-bottom: 10px;
+}
+
+.zoom-slider label {
+    margin-right: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-divider {
+    height: 10px;
 }
