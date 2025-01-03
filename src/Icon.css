@@ -1,7 +1,24 @@
 .icon-wrapper {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    color: red;
-    border: 10px black solid;
-}
+    width: 200px;
+    height: 200px;
+    background-color: hotpink;
+    border-radius: 50%; /* Round shape */
+    position: relative; /* To position the text in the center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 03s ease-in-out;
+    transform: rotate(0deg); /* Initial rotation state */
+    /* clip-path: path('M50 0 C60 10, 90 5, 100 30 C115 55, 80 60, 75 85 C70 95, 50 85, 45 75 C40 60, 15 55, 30 30 C40 10, 50 0 Z'); Splat path */
+}  
+  .icon-wrapper:hover {
+    transform: rotate(360deg); /* Rotate on hover */
+  }
+  
+  .icon-text {
+    color: orange;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1; /* Ensures the text stays on top */
+  }

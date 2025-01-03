@@ -1,7 +1,10 @@
-.homepage-wrapper {
-    display: flex;
-}
 
+.homepage-icons-wrapper {
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap; 
+	flex-grow: 1;
+}
 button {
     background: none;
 	color: inherit;

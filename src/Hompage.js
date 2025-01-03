@@ -2,7 +2,9 @@ import "./Homepage.css";
 import {Icon} from "./Icon";
 export function Homepage({clickHandler}) {
     return (
-        <div className="homepage-wrapper">
+        <>
+        
+        <div className="content homepage-icons-wrapper">
             <button onClick={() => clickHandler("about")}>
                 <Icon  name="About" />
             </button>
@@ -13,6 +15,7 @@ export function Homepage({clickHandler}) {
                 <Icon  name="Art" />
             </button>
         </div>
+        </>
 
     );
 }

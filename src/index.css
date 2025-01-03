@@ -1,10 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding is part of the width calculation */
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding: 1% 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff69b4;
+  color: #ffa500;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
 body {
-  margin: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+.back-link {
+  /* position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%); */
+
+  color: orange;
+  background-color: hotpink;
+
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+
+.back-link:hover {
+  background-color: orange;
+  color: hotpink;
+
+  font-weight: bold;
+}
+
+.content{
+	width: 100%; 
+	height: 100%; 
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
 }
 
 code {
@@ -23,4 +94,25 @@ code {
 
 .flex-one {
   flex-grow: 1;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    background-color: orange;
+    color: hotpink;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: orange;
+    color: hotpink;
+  }
+}
+
+.back-link {
+  animation: pulse 1.5s ease-in-out;
+}
+
+video {
+  height: 80vh;
 }

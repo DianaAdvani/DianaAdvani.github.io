@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import {Homepage} from "./Hompage";
 import { ProjectHomepage } from './ProjectHomepage';
 import {About} from "./About";
@@ -9,8 +7,16 @@ import { useState } from 'react';
 function App() {
   const [page, setPage] = useState("home");
   return (
-    <div className="App">
-      <header className="App-header">
+    <>
+        <header className="header">
+            <h1>Diana Advani</h1>
+            <div className="header-descriptors">
+                <p>developer</p>
+                <p>designer</p>
+                <p>creative</p>
+            </div>
+        </header>
+
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -27,8 +33,11 @@ function App() {
         >
           Learn React
         </a> */}
-      </header>
-    </div>
+        {/* <footer>
+          <p> Contact me: dianacadvani[at]gmail.com</p>
+        </footer> */}
+
+    </>
   );
 }
 
