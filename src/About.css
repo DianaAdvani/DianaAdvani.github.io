@@ -1,24 +1,23 @@
 .layout {
-    padding-top: 10vh;
     display: flex;
     justify-content: center;
     height: 100%;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 .box {
     display: flex;
     align-items: center;
     justify-content: stretch;
-    width: 33%; /* This will adjust based on screen size */
+    width: 33%; 
     flex-direction: column;
     padding: 10px;
 }
 
 .swap {
     position: relative;
-    width: 50%; 
-    padding-bottom: 50%; /* Forces the height to match the width, creating a square */
+    width: 100%; 
+    padding-bottom: 100%; 
     height: 0;
 }
 
@@ -26,8 +25,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%; /* Make image responsive to the parent width */
-    height: 90%; /* Maintain aspect ratio */
+    width: 90%; 
+    height: 90%;
     opacity: 0;
     animation: swap 2s steps(2) infinite;
 }
@@ -43,14 +42,26 @@
 }
 
 @keyframes swap {
-    0%, 50% { opacity: 1; } /* Show the first image */
-    50.01%, 100% { opacity: 0; } /* Show the second image */
+    0%, 50% { opacity: 1; } 
+    50.01%, 100% { opacity: 0; } 
 }
 
 #f1 {
-    animation-delay: 0s; /* CodingDuck1 starts immediately */
+    animation-delay: 0s; 
 }
 
 #f2 {
-    animation-delay: 1s; /* CodingDuck2 starts halfway through the first cycle */
+    animation-delay: 1s;
+}
+
+@media screen and (max-width: 768px) {
+    .text p {
+        display: none;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
 }

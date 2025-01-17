@@ -1,8 +1,16 @@
 import ReactGoogleSlides from "react-google-slides";
+import { useState } from "react";
 export function OnePerson(){
+
+    const [slides, setSlides] = useState(new Array(12).fill(0));
     return (
-        <>
-            <h1>Artist's Website</h1>
+        <div className="project-wrapper">
+        <h1>Artist's Website</h1>
+        { slides.map((_, index) => (
+
+            (index === 0) ? <a href="https://yolandachetwynd.website/" target="_blank"><img src={process.env.PUBLIC_URL + `/ArtistsWebsite-${index+1}.jpg`}/></a> : <img src={process.env.PUBLIC_URL + `/ArtistsWebsite-${index+1}.jpg`}/>
+        ))} 
+            {/* <h1>Artist's Website</h1>
 
             <div className="center ">
 
@@ -37,7 +45,7 @@ export function OnePerson(){
                     showControls
                     loop
                 />
-             </div>
-        </>
+             </div> */}
+        </div>
     )
 }

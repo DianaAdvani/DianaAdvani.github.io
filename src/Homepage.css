@@ -14,3 +14,11 @@ button {
 	cursor: pointer;
 	outline: inherit;
 }
+
+@media screen and (max-width: 768px) {
+	.homepage-icons-wrapper {
+		margin: 10px 0px;
+		flex-direction: column;
+		gap: 30px;
+	}
+}
